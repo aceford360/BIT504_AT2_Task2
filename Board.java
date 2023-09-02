@@ -24,7 +24,7 @@ public class Board {
 	}
 	
 
-	 /** Return true if it is a draw (i.e., no more EMPTY cells) */ 
+	 /** Return true if it is a draw */ 
 	public boolean isDraw() {
 		for (int row = 0; row < GameMain.ROWS; ++row) {
 	        for (int col = 0; col < GameMain.COLS; ++col) {
@@ -41,7 +41,7 @@ public class Board {
 		
 	}
 	
-	/** Return true if the current player "thePlayer" has won after making their move  */
+	/** Return true if the current player has won after making their move  */
 	public boolean hasWon(Player thePlayer, int playerRow, int playerCol) {
 	    // Check if the player has 3 in that row
 	    if (cells[playerRow][0].content == thePlayer &&
